@@ -4,11 +4,11 @@ FROM python:3.9-slim
 # Set working directory
 WORKDIR /app
 
-# Copy files
+# Copy code
 COPY . .
 
-# Install dependencies
+# Install Flask
 RUN pip install Flask
 
-# Set entrypoint
+# Run the app
 CMD ["python", "app.py"]
